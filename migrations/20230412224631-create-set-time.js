@@ -14,6 +14,11 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: { model: 'event', key: 'event_id' }
       },
+      stage_id: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'stage', key: 'stage_id' }
+      },
       band_id: {
         allowNull: false,
         type: Sequelize.INTEGER,
